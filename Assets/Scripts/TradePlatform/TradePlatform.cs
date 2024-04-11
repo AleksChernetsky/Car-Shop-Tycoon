@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TradePlatform : MonoBehaviour
 {
+    [Header("Basic values")]
     [SerializeField] private GameObject[] _carPrefabs;
     [SerializeField] private GameObject _dividers;
     [SerializeField] private Transform _carPrefabSpawnPoint;
@@ -12,6 +13,7 @@ public class TradePlatform : MonoBehaviour
     private PlayerResources _playerResources;
     private List<GameObject> _newCars = new List<GameObject>();
 
+    public GameObject _activeCar { get; private set; }
     [field: SerializeField] public int PlatformCost { get; private set; }
     [field: SerializeField] public int CarCost { get; private set; }
     [field: SerializeField] public int CarUpgradeCost { get; private set; }
@@ -107,5 +109,19 @@ public class TradePlatform : MonoBehaviour
     public void SellCar()
     {
         OnGetMoney?.Invoke(CarPrice);
+        Debug.Log(CarPrice);
+        ActiveCarType();
+    }
+
+    public GameObject ActiveCarType()
+    {
+        for (int i = 0; i < _newCars.Count; i++)
+        {
+            if (_newCars[i].activeInHierarchy)
+            {
+                return _newCars[i];
+            }
+        }
+        return null;
     }
 }

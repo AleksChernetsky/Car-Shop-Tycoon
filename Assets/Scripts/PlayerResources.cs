@@ -8,7 +8,7 @@ public class PlayerResources : MonoBehaviour
 
     private void Start()
     {
-        CurrentMoney = 10000;
+        CurrentMoney = 9999999;
         _tradePlatform = FindObjectsOfType<TradePlatform>();
 
         for (int i = 0; i < _tradePlatform.Length; i++)

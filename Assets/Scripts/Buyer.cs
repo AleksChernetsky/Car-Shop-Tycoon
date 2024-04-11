@@ -66,28 +66,14 @@ public class Buyer : MonoBehaviour
         }
     }
     private void TakeKeys()
-    {        
-        if (_cashier.IsBusy)
-        {
-            _agent.isStopped = true;
-        }
-        else
-        {
-            _agent.isStopped = false;
-            _agent.SetDestination(_cashier.transform.position);
-        }
+    {
+        _agent.isStopped = false;
+        _agent.SetDestination(_cashier.transform.position);
     }
     private void TakeCar()
     {
-        if (_carReleaser.IsBusy)
-        {
-            _agent.isStopped = true;
-        }
-        else
-        {
-            _agent.isStopped = false;
-            _agent.SetDestination(_carReleaser.transform.position);
-        }
+        _agent.isStopped = false;
+        _agent.SetDestination(_carReleaser.transform.position);
     }
     public void ResetCharacter()
     {

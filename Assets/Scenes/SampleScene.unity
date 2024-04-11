@@ -709,7 +709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8832d8257d98d7e4c8bc4f31d1671904, type: 3}
   m_Name: 
@@ -1315,6 +1315,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 2.25
       objectReference: {fileID: 0}
+    - target: {fileID: 6943149470445175177, guid: 3659ee5fdf14fb946b467caa19dcd092, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7220207168675167235, guid: 3659ee5fdf14fb946b467caa19dcd092, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.185
@@ -1384,6 +1388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2937001894619684883, guid: fa5c41c3654c02c4893001370db41a1a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6336302088903663929, guid: fa5c41c3654c02c4893001370db41a1a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.375
@@ -1416,6 +1424,10 @@ PrefabInstance:
     - target: {fileID: 2016774416488697459, guid: 57049bfbee2714d4093886bc7ebc47d6, type: 3}
       propertyPath: m_Name
       value: Trade Platform Stage 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950525525229252223, guid: 57049bfbee2714d4093886bc7ebc47d6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5875750520367032156, guid: 57049bfbee2714d4093886bc7ebc47d6, type: 3}
       propertyPath: m_Camera

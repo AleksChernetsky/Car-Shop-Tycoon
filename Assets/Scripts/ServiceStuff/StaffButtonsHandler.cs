@@ -12,7 +12,7 @@ public abstract class StaffButtonsHandler : MonoBehaviour, IPointerDownHandler
     protected float _maxProgress = 100;
     protected float _currentProgress = 0;
     protected float _progressPercentage;
-    protected float _progressRate = 0.25f;
+    protected float _progressRate = 1f;
 
     protected Coroutine _progressView;
 
